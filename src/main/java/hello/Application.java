@@ -15,7 +15,7 @@ import java.util.Stack;
 public class Application {
 
   private String href = null;
-  private Stack<String> cmdSeq;
+  private Stack<String> cmdSeq = new Stack<String>();
   private int healthNum = 0;
   private int curScore = 0;
   private boolean pointIncrease;
