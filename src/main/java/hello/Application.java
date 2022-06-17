@@ -87,7 +87,7 @@ public class Application {
         moveRandom();
         fireTwice();
       } else if (pointIncrease) {
-        return "T";
+        fireTwice();
       } else {
         moveRandom();
         fireTwice();
