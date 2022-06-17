@@ -105,7 +105,7 @@ public class Application {
     cmdSeq.push("F");
     cmdSeq.push("F");
     String[] LF = new String[]{ "R", "L"};
-    int i = new Random().nextInt(1);
+    int i = new Random().nextInt(2);
     cmdSeq.push(LF[i]);
   }
 
