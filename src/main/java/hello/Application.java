@@ -73,17 +73,13 @@ public class Application {
     this.playerState = arenaUpdate.arena.state.get(this.href);
     this.direction = playerState.direction;
     
-    if (playerState.wasHit) {
+    if (this.playerState.wasHit) {
       healthNum += 1;
     } else {
       healthNum = 0;
     }
 
-    if (playerState.score > curScore) {
-      pointIncrease = true;
-    } else {
-      pointIncrease = false;
-    }
+    pointIncrease = this.playerState.score > curScore;
     curScore = playerState.score;
 
     if (cmdSeq.empty()) {
