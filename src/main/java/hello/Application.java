@@ -79,7 +79,11 @@ public class Application {
       healthNum = 0;
     }
 
-    pointIncrease = playerState.score > curScore;
+    if (playerState.score > curScore) {
+      pointIncrease = true;
+    } else {
+      pointIncrease = false;
+    }
     curScore = playerState.score;
 
     if (cmdSeq.empty()) {
